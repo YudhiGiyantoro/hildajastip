@@ -40,6 +40,8 @@
     --normal-font-size:.938rem ;
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
+    --smaller-font-sizee: .65rem;
+
 
     /*========== Font weight ==========*/
     --font-medium:500 ;
@@ -74,6 +76,7 @@
         --smaller-font-size:.813rem ;
     }
 }
+
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
@@ -222,6 +225,13 @@ img{
    margin-top:140px;
  }
  
+ .dot {
+    height: 13px;
+    width: 13px;
+    background-color: #050505;
+    border-radius: 50%;
+    display: inline-block;
+  }
  
  .main-content{
    display: flex;
@@ -414,6 +424,10 @@ img{
     font-weight: var(--font-medium);
 }
 
+
+
+
+
 .nav__link:hover{
     color: var(--orange-color);
 }
@@ -462,6 +476,7 @@ box-shadow: 0 -1px 4px rgba(0,0,0,.15);
 .home__contents{
     grid-template-columns: .5fr 3fr;
     align-items: center;
+    margin-top: -2rem;
 }
 
 .home__social{
@@ -485,7 +500,7 @@ box-shadow: 0 -1px 4px rgba(0,0,0,.15);
 }
 
  .home__bloob-img{
-    width: 170px;
+    width: 173px;
  }
 
  .home__data{
@@ -494,6 +509,7 @@ box-shadow: 0 -1px 4px rgba(0,0,0,.15);
 
 .home__title{
     font-size: var(--big-font-size);
+    text-align: center;
 }
 
 .home__subtitle{
@@ -921,6 +937,15 @@ display: none;
     width: 265px;
     border-radius: .5rem;
     justify-self: center;
+    padding-top: 0rem;
+}
+
+.portfolio__imgs{
+    width: 265px;
+    border-radius: .5rem;
+    justify-self: center;
+    padding-top: 0rem;
+    cursor: pointer;
 }
 
 .portfolio__title{
@@ -933,6 +958,11 @@ display: none;
     margin-bottom: -1rem;
 }
 
+
+.portfolio__titless{
+    font-size: var(--h3-font-size);
+    text-align: justify;
+}
 .portfolio__description{
     margin-bottom: var(--mb-0-75);
 }
@@ -1108,7 +1138,7 @@ button[type="submit"]:hover .button__icon{
  transform: translateX(.25rem);
 }
 
-=================== FOOTER ====================*/
+/*=================== FOOTER ====================*/
 .footer{
     padding-top: 2rem;
 }
@@ -1319,7 +1349,7 @@ color: #fff;
 
 
     .section__subtitle{
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
     }
 
     .header{
@@ -1422,6 +1452,7 @@ color: #fff;
 
     .portfolio__img{
         width: 320px;
+        margin-bottom: 4rem;
     }
 
     .portfolio__content{
